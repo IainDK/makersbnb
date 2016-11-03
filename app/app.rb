@@ -6,20 +6,16 @@ require_relative 'models/space'
 require_relative 'models/user'
 
 class BnB < Sinatra::Base
-
-
-use Rack::MethodOverride
-
   enable :sessions
   set :session_secret, 'super secret'
 
     register Sinatra::Flash
 
-
+  helpers do
   def current_user
     @current_user ||= User.get(session[:user_id])
   end
-
+end
 
   get '/' do
     erb :'home'
@@ -62,12 +58,11 @@ use Rack::MethodOverride
         flash.now[:errors] = ['The email or password is incorrect']
         erb :'sessions/new'
       end
-    end
-
-    delete '/sessions' do
-    session[:user_id] = nil
-    flash.keep[:notice] = 'Goodbye!'
-    redirect to '/home'
+  
+  delete '/sessions' do
+ session[:user_id] = nil
+ flash.keep[:notice] = 'goodbye!'
+ redirect to '/home'
  end
 
   get '/spaces' do
@@ -80,17 +75,12 @@ use Rack::MethodOverride
   end
 
   post '/spaces' do
-    if current_user
     Space.create(name: params[:name],
                  description: params[:description],
                  price: params[:price],
                  available_from: params[:available_from],
                  available_to: params[:available_to])
     redirect '/spaces'
-  else
-  flash.now[:errors] = ['Please register or login to list a space']
-    erb :'register'
-  end
   end
 
   get '/spaces/filter_dates' do
