@@ -1,11 +1,11 @@
 feature 'User signs out' do
 
   let!(:user) do
-    User.create(first_name: 'test-first',
-                last_name: 'test-last',
-                email: 'test@test.com',
-                password: 'test',
-                password_confirmation: 'test')
+    User.create(first_name: 'Iain',
+                last_name: 'Legend',
+                email: 'legend@test.com',
+                password: 'dodgy',
+                password_confirmation: 'dodgy')
   end
 
   scenario 'while being signed in' do
@@ -16,7 +16,7 @@ feature 'User signs out' do
     expect(page).to have_content "Welcome back to Makers BnB #{user.email}"
     click_button 'Sign out'
     expect(page).to have_content('Goodbye!')
-    #expect(page).not_to have_content('Welcome, test@test.com')
+    expect(page).not_to have_content('Welcome, legend@test.com')
   end
 
 end
