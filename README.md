@@ -1,42 +1,41 @@
-Makers BnB
+## MakersBnB
 
+MakersBnB is a group project that was built during my 5th week at [Makers Academy](http://www.makersacademy.com/career-support/). It is designed to replicate a simplified version of AirBnB.
 
-ABOUT:
-The challenge is to build an AirBnB clone ("Makers AirBnB")
+## Technology Used
 
+This project uses Ruby, Sinatra, PostgreSQL, RSpec, Capybara, HTML, CSS and BootStrap.
 
-USER STORIES:
+## Functionality & Features
 
-  As a signed-up Host, So as I can manage my bookings, I can accept or reject a booking request.
+Users can sign-up and sign-in.
 
-  As a User, So I can ensure the details of my requested booking are correct, I should be able to see my requested details in full.
+![sign-in](http://i.imgur.com/J3810fp.jpg "Sign In Page")
 
-  As a Host, So my space is available for rent, I can list a single space.
+Once signed-in, users will be redirected to the home screen, where they can view available spaces (or list their own).
 
-  As a User, So I can see what properties are available that meet my criteria, I should be able to view available listings.
+![home-screen](http://i.imgur.com/uZfMGem.jpg "Home Screen")
 
-  As a User or Host, so that I can save my user profile, I want to be able to sign up.
+Users are able to add their own space for rent.
 
-  As a User, So I can get further information about a property that I am interested in, I should be able to click something that will provide me with more details of the property.
+![add-space](http://i.imgur.com/0ABYjXT.jpg "Add Space")
 
-  As a signed-up User, so I can rent a space, I can request a booking / space from the Host.
+A view of the home screen with an available space.
 
-  As a User or Host, so that I can view my personal information & make bookings, I want to be able to sign in.
+![home-with-space](http://i.imgur.com/uvzdjWa.jpg "Home Screen with Space")
 
-  As a User or Host, so that no-one can access my information, I want to be able to log out.
+Once a space has been added, it can then be edited to update particular fields, e.g. availability, price and name.
 
-  As a Host, so my space details are up to date, I can update the property details.
+![edit-space](http://i.imgur.com/MTK1Q1h.jpg "Edit Space")
 
-  As a Host, So I can have a booming business, I can manage multiple spaces.
+Once a space has been listed, users can view it to find out more information. They can then request to book it should they wish to do so.
 
-  As someone who has just signed up, so I feel confident that my sign-up has gone through, I want to receive an email confirmation of my sign-up.
+![view-space](http://i.imgur.com/bFrHOOb.jpg "View Space")
 
-  As a signed-up User who has booked, so I feel confident that my booking has gone through, I want to receive an email confirmation of my booking.
+After the user has selected their desired check-in and check-out date, they will then be redirected to a new page informing them of the finalised details, including the total cost.
 
+![confirm-booking](blob:http://imgur.com/c6674155-b268-47ac-8020-fb1363482468 "Confirm Booking")
 
-TESTING:
-RSpec was utilised for testing purposes
+Lastly, users can make the payment via Swipe.
 
-
-AUTHORS:
-Frances Maxwell, Michael Barry, Michal Klesinski, Brian Patterson, Iain Kinnish, Darren Firth
+![swipe-payment](blob:http://imgur.com/166f3a35-c31c-4c56-9711-4794d54b576a "Swipe Payment")
