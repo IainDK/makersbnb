@@ -34,8 +34,8 @@ Once a space has been listed, users can view it to find out more information. Th
 
 After the user has selected their desired check-in and check-out date, they will then be redirected to a new page informing them of the finalised details, including the total cost.
 
-![confirm-booking](blob:http://imgur.com/c6674155-b268-47ac-8020-fb1363482468 "Confirm Booking")
+![confirm-booking](http://i.imgur.com/9iEWyqe.jpg "Confirm Booking")
 
 Lastly, users can make the payment via Swipe.
 
-![swipe-payment](blob:http://imgur.com/166f3a35-c31c-4c56-9711-4794d54b576a "Swipe Payment")
+![swipe-payment](http://i.imgur.com/40KRnFh.jpg "Swipe Payment")
